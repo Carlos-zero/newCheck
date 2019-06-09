@@ -1,0 +1,19 @@
+mybatis:
+  type-aliases-package: com.example.demo.model          #这个是什么玩意？
+  type-handlers-package: com.example.typehandler        #还有这个
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+spring:
+#  main:
+#    web-application-type: none
+#  jmx:
+#    enabled=false
+  datasource:
+    url: jdbc:mysql://localhost:3306/redcheck?useSSL=false&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PRC
+#    url: jdbc:mysql://localhost:3306/user?useSSL=false&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PRC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 948017088wasd
+#    password:
